@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --miku-gray: #373b3e;
+    --miku-light: #bec8d1;
+    --miku-teal: #86cecb;
+    --miku-deep: #137a7f;
+    --miku-pink: #e12885;
+    --miku-aqua: #80d4e5;
+    --miku-waterleaf: #a1e2e8;
+    --miku-padua: #a6e3d2;
+    --miku-ice1: #b1f1e2;
+    --miku-ice2: #c1f6da;
+}
+
+@layer base {
+    body {
+        @apply bg-[#373b3e] text-[#bec8d1];
+    }
+}
+
+@layer components {
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-[#373b3e];
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-[#137a7f] rounded-full;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-[#86cecb];
+    }
+}
